@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'VCR_OSD_MONO_1.001';
+  scroll-behavior: smooth;
+  color-scheme: light;
+  image-rendering: pixelated;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+}
+
+@font-face {
+  font-family: "VCR_OSD_MONO_1.001";
+  src: local("VCR_OSD_MONO_1.001"),
+   url("./assets/fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
+  font-weight: normal;
+}

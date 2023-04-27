@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      // NOTE - INCLUDE YOUR FIREBASE CONFIG HERE FOR ANYTHING TO WORK:
+      const firebaseConfig = {
+        apiKey: "AIzaSyC7iGdmsakjw3VySCZmFVPrbCBl0mWFlG8",
+        authDomain: "mafia-81fef.firebaseapp.com",
+        databaseURL: "https://mafia-81fef-default-rtdb.firebaseio.com",
+        projectId: "mafia-81fef",
+        storageBucket: "mafia-81fef.appspot.com",
+        messagingSenderId: "457931665735",
+        appId: "1:457931665735:web:970edaa5fedb6e0f5d5c62"
+      };
+      firebase.initializeApp(firebaseConfig); 
+    </script>
+
+    <script src="/src/firebase/firebaseInit.js"></script>
+
+    <script src="/src/variables/setVariables.js"></script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
